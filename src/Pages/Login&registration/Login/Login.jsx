@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 // import useAuth from "../../Hook/useAuth";
 import { useForm } from "react-hook-form";
 import GoogleLogin from "../GoogleLogin";
-import { useContext } from "react";
+import { useContext,  } from "react";
 import { AuthContext } from "../../../Auth/AuthProvider";
 // import { useState } from "react";
 // import toast from "react-hot-toast";
@@ -20,17 +20,17 @@ const Login = () => {
     } = useForm()
     const { loginEmailWithPassword } = useContext(AuthContext)
     const navigate = useNavigate()
-    // const location = useLocation()
+    const location = useLocation()
     // const [errorSee, setErrorSee] = useState()
-    // const from = location.state?.from?.pathname || '/'
+    const from = location.state?.from?.pathname || '/'
     const onSubmit = data => {
         console.log(data.email, data.password)
         loginEmailWithPassword(data.email, data.password)
             .then(result => {
                 const loginUser = result.user
                 console.log(loginUser)
-                toast.success('Login Succsess')
-                navigate('/')
+                
+                // navigate('/')
                 // const userInfo = {
                 //     email: result.user?.email,
                 //     name: result.user?.displayName
@@ -39,16 +39,17 @@ const Login = () => {
                 //     .then(res => {
                 //         console.log(res.data, 'user login add')
                 //         // navigate(from,{replace:true})
-                //         navigate(from, { replace: true })
+                        navigate(from, { replace: true })
                 //     })
 
 
                 // navigate(from, { replace: true })
-                // toast.success('Login success')
+                toast.success('Login success')
             })
             .catch(error => {
                 console.log(error.message)
-                // toast.error(error.message)
+                // setErrorSee(error.message)
+                toast.error(error.message)
             })
     }
 

@@ -1,6 +1,6 @@
 
-import { Link, useNavigate} from 'react-router-dom';
-// import {useNavigate, useLocation} from "react-router-dom";
+import { Link, useNavigate, useLocation} from 'react-router-dom';
+// import {useNavigate,} from "react-router-dom";
 import { useForm } from 'react-hook-form';
 import { useContext } from 'react';
 import { AuthContext } from '../../../Auth/AuthProvider';
@@ -31,8 +31,8 @@ const Register = () => {
 
     
     const navigate = useNavigate()
-    // const location = useLocation()
-    // const from = location.state?.from?.pathname || '/'
+    const location = useLocation()
+    const from = location.state?.from?.pathname || '/'
 
     const onSubmit = async (data) => {
         console.log(data.email, data.password)
@@ -60,8 +60,8 @@ const Register = () => {
                 //     .then(res => {
                 //         if (res.data.insertedId) {
                 //             console.log('user add data base')
-                //             navigate(from, { replace: true })
-                            navigate('/')
+                            navigate(from, { replace: true })
+                            // navigate('/')
                             toast.success("Register Successes Fully");
                 //         }
                 //     })

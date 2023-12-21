@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../Auth/AuthProvider";
-import { Link,useNavigate } from "react-router-dom";
+import { Link,NavLink,useNavigate } from "react-router-dom";
 import toast from 'react-hot-toast';
 
 const Navber = () => {
@@ -18,8 +18,23 @@ const Navber = () => {
 
     const allLink = <>
 
-        <li><a>Home</a></li>
-        <li><a>Dashboard</a></li>
+<li className="font-semibold text-lg"><NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#F5AB35] underline link link-hover" : ""
+            }
+        >
+            Home
+        </NavLink></li>
+<li className="font-semibold text-lg"><NavLink
+            to="/dashboard"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#F5AB35] underline link link-hover" : ""
+            }
+        >
+            Dashboard
+        </NavLink></li>
+        
 
 
 
@@ -41,7 +56,7 @@ const Navber = () => {
                             {allLink}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <Link to='/' className="font-bold text-2xl">SCC Technovision Inc</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -51,7 +66,7 @@ const Navber = () => {
 
                 <div className="navbar-end gap-5">
                     {
-                        user ? <button onClick={LogOutHandel} className="btn">Logout</button> : <>
+                        user ? <button onClick={LogOutHandel} className="font-semibold">Logout</button> : <>
                         <button className="btn"><Link to='/login'>Login</Link></button>
                         <button className="btn"><Link to='/register'>Register</Link></button>
                         </>

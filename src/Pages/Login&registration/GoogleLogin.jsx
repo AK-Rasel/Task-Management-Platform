@@ -1,18 +1,26 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Auth/AuthProvider";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,useLocation } from 'react-router-dom';
 import toast from 'react-hot-toast';
+
+
 const GoogleLogin = () => {
     const { googleLogin } = useContext(AuthContext)
     const navigate = useNavigate()
+    const location = useLocation()
     // google
     const googleHandle = () => {
+       
+    
+    // const [errorSee, setErrorSee] = useState()
+    const from = location.state?.from?.pathname || '/'
+    
 
         googleLogin()
             .then(res => {
                 console.log(res.data)
                 toast.success('Login Succsess')
-                navigate('/')
+                navigate(from, { replace: true })
 
             })
 

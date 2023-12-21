@@ -3,6 +3,8 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login&registration/Login/Login";
 import Register from "../Pages/Login&registration/Registration/Register";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import PrivetRouter from "../Provider/PrivetRouter";
 
 const createrouter = createBrowserRouter([
     {
@@ -11,6 +13,9 @@ const createrouter = createBrowserRouter([
       children: [{
         path:'/',
         element:<Home/>
+      },{
+        path: 'dashboard',
+        element: <PrivetRouter><Dashboard/></PrivetRouter>
       }]
     },{
         path:'login',
