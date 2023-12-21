@@ -1,6 +1,20 @@
-
+import { useContext } from "react";
+import { AuthContext } from "../Auth/AuthProvider";
+import { Link,useNavigate } from "react-router-dom";
+import toast from 'react-hot-toast';
 
 const Navber = () => {
+    const {logOut,user} = useContext(AuthContext)
+    const navigate = useNavigate()
+    const LogOutHandel = () => {
+        logOut()
+        .then(() => {
+            navigate("/login")
+            toast.success('Logout Succsess')
+
+        })
+        .catch(error => console.error(error))
+    }
 
     const allLink = <>
 
@@ -34,8 +48,15 @@ const Navber = () => {
                        {allLink}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
+
+                <div className="navbar-end gap-5">
+                    {
+                        user ? <button onClick={LogOutHandel} className="btn">Logout</button> : <>
+                        <button className="btn"><Link to='/login'>Login</Link></button>
+                        <button className="btn"><Link to='/register'>Register</Link></button>
+                        </>
+                    }
+                    
                 </div>
             </div>
 
