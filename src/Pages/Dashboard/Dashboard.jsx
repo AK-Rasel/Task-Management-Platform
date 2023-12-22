@@ -1,5 +1,5 @@
 import { IoMdNotificationsOutline } from "react-icons/io";
-import { IoIosSearch } from "react-icons/io";
+
 import { Link, NavLink } from "react-router-dom";
 import { GrHomeRounded } from "react-icons/gr";
 

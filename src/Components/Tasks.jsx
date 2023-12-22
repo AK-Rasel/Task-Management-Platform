@@ -8,6 +8,34 @@ import useTasks from "../Hooks/useTesk";
 const Tasks = () => {
   const [tasks, refetch] = useTasks();
 
+  // const handleUpdete = (id) => {
+  //   Swal.fire({
+  //     title: "Are you sure?",
+  //     text: "You won't be able to revert this!",
+  //     icon: "warning",
+  //     showCancelButton: true,
+  //     confirmButtonColor: "#3085d6",
+  //     cancelButtonColor: "#d33",
+  //     confirmButtonText: "Yes, delete it!"
+  // }).then(async (result) => {
+  //     if (result.isConfirmed) {
+  //         const res = await fetch(`https://task-management-platform-server-ecru.vercel.app/tasks/${id}`, {
+  //             method: 'DELETE'
+  //         });
+
+  //         if (res) {
+  //             refetch();
+  //             Swal.fire({
+  //                 title: "Deleted!",
+  //                 text: "Your file has been deleted.",
+  //                 icon: "success"
+  //             });
+  //         }
+  //     }
+  // });
+
+  // }
+
   const handleDelete = async (id) => {
     Swal.fire({
         title: "Are you sure?",
@@ -19,7 +47,7 @@ const Tasks = () => {
         confirmButtonText: "Yes, delete it!"
     }).then(async (result) => {
         if (result.isConfirmed) {
-            const res = await fetch(`http://localhost:5000/tasks/${id}`, {
+            const res = await fetch(`https://task-management-platform-server-ecru.vercel.app/tasks/${id}`, {
                 method: 'DELETE'
             });
 
@@ -51,7 +79,7 @@ const Tasks = () => {
                   <div className="flex justify-between items-center">
                     <h2 className="font-bold text-base">{task?.title}</h2>
                     <div className="flex gap-2">
-                      <MdOutlineModeEditOutline />
+                      <MdOutlineModeEditOutline  />
                       <RiDeleteBin6Line onClick={() => handleDelete(task?._id)} />
                     </div>
                   </div>

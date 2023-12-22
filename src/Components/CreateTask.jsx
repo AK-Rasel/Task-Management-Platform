@@ -9,7 +9,7 @@ const CreateTask = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
   const handleCreateTask = async (data) => {
-    const res = await fetch("http://localhost:5000/tasks", {
+    const res = await fetch("https://task-management-platform-server-ecru.vercel.app/tasks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
