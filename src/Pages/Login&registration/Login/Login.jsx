@@ -90,7 +90,7 @@ const Login = () => {
                             <p className="mt-2 text-sm ">
                                 Don't have an account yet?
                                 <Link
-                                    className="text-[#F5AB35] decoration-2 hover:underline font-medium dark:focus:outline-none dark:focus:ring-1 "
+                                    className="text-[#2563DC] decoration-2 hover:underline font-medium dark:focus:outline-none dark:focus:ring-1 "
                                     to={'/register'}
                                 >
                                     Create Account
@@ -144,7 +144,7 @@ const Login = () => {
                             <div className="grid">
                                 <button
                                     type="submit"
-                                    className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#F5AB35] text-white "
+                                    className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#2563DC] text-white "
                                 >
                                     Login
                                 </button>

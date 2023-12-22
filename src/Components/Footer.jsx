@@ -3,23 +3,23 @@ import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="bg-neutral text-neutral-content">
+        <footer className="bg-[#2563DC] text-white">
             <div className="footer p-10 mx-auto max-w-[1280px]">
                 <aside>
-                    <h1><Link to='/' className="font-bold text-2xl">SCC Technovision Inc</Link></h1>
+                    <h1><Link to='/' className="font-bold ">TaskMasterHub</Link></h1>
                     <ul className="flex gap-4">
                         <li className="font-semibold text-lg"><NavLink
                             to="/"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-[#F5AB35] underline link link-hover" : ""
+                                isPending ? "pending" : isActive ? "text-[#F5AB35] underline text-base link link-hover" : ""
                             }
                         >
                             Home
                         </NavLink></li>
-                        <li className="font-semibold text-lg"><NavLink
+                        <li className="font-semibold "><NavLink
                             to="/dashboard"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-[#F5AB35] underline link link-hover" : ""
+                                isPending ? "pending" : isActive ? "text-[#F5AB35] underline text-base link link-hover" : ""
                             }
                         >
                             Dashboard

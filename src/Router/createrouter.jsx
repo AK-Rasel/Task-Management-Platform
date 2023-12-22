@@ -5,6 +5,7 @@ import Login from "../Pages/Login&registration/Login/Login";
 import Register from "../Pages/Login&registration/Registration/Register";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import PrivetRouter from "../Provider/PrivetRouter";
+import ContactUs from "../Pages/ContactUs/ContactUs";
 
 const createrouter = createBrowserRouter([
     {
@@ -14,8 +15,8 @@ const createrouter = createBrowserRouter([
         path:'/',
         element:<Home/>
       },{
-        path: 'dashboard',
-        element: <PrivetRouter><Dashboard/></PrivetRouter>
+        path:'contactUs',
+        element:<ContactUs/>
       }]
     },{
         path:'login',
@@ -24,6 +25,9 @@ const createrouter = createBrowserRouter([
     ,{
         path:'register',
         element:<Register/>
+    },{
+      path: 'dashboard',
+      element: <PrivetRouter><Dashboard/></PrivetRouter>
     }
   ]);
   export default createrouter;

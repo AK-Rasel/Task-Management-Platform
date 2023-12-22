@@ -90,7 +90,7 @@ const Register = () => {
 
                             <p className="mt-2 text-sm ">
                                 Already have an account?<Link
-                                    className="text-[#F5AB35] decoration-2 hover:underline font-medium dark:focus:outline-none dark:focus:ring-1 "
+                                    className="text-[#2563DC] decoration-2 hover:underline font-medium dark:focus:outline-none dark:focus:ring-1 "
                                     to={'/login'}
                                 >
                                     Login
@@ -186,7 +186,7 @@ const Register = () => {
                                         {...register('userImg', { required: true })}
                                         type="file"
                                         className="block w-full text-sm text-gray-500 file:me-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold
-file:bg-[#F5AB35] file:text-white
+file:bg-[#2563DC] file:text-white
 
 "/>
                                 </label>
@@ -196,7 +196,7 @@ file:bg-[#F5AB35] file:text-white
                             <div className="grid">
                                 <button
                                     type="submit"
-                                    className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#F5AB35] text-white "
+                                    className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#2563DC] text-white "
                                 >
                                     Login
                                 </button>

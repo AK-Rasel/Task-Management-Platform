@@ -18,7 +18,7 @@ const Banner = () => {
     <div className="flex-1 text-center md:text-start">
       <h1 className="lg:text-7xl text-5xl font-bold uppercase">welcome</h1>
       <h2 className="py-4 lg:text-xl text-lg font-bold">Manage Your Tesk</h2>
-      <button className="btn btn-primary">Let’s Explore</button>
+      <button className="btn bg-[#2563DC] text-white">Let’s Explore</button>
     </div>
   </div>
 </div>

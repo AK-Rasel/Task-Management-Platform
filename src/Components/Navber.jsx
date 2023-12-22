@@ -21,7 +21,7 @@ const Navber = () => {
         <li className="font-semibold text-lg"><NavLink
             to="/"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-[#F5AB35] underline link link-hover" : ""
+                isPending ? "pending" : isActive ? "text-[#2563DC] underline link link-hover" : ""
             }
         >
             Home
@@ -29,7 +29,7 @@ const Navber = () => {
         <li className="font-semibold text-lg"><NavLink
             to="/dashboard"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-[#F5AB35] underline link link-hover" : ""
+                isPending ? "pending" : isActive ? "text-[#2563DC] underline link link-hover" : ""
             }
         >
             Dashboard
@@ -37,7 +37,7 @@ const Navber = () => {
         <li className="font-semibold text-lg"><NavLink
             to="/about"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-[#F5AB35] underline link link-hover" : ""
+                isPending ? "pending" : isActive ? "text-[#2563DC] underline link link-hover" : ""
             }
         >
            About
@@ -45,7 +45,7 @@ const Navber = () => {
         <li className="font-semibold text-lg"><NavLink
             to="/contactUs"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-[#F5AB35] underline link link-hover" : ""
+                isPending ? "pending" : isActive ? "text-[#2563DC] underline link link-hover" : ""
             }
         >
            Contact us
