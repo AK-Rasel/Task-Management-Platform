@@ -1,7 +1,7 @@
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
-
+import { GrHomeRounded } from "react-icons/gr";
 
 import Tasks from "../../Components/Tasks";
 import CreateTask from "../../Components/CreateTask";
@@ -14,7 +14,7 @@ const Dashboard = () => {
     <div className="">
       <div className="flex">
         <div className="w-[300px] p-8">
-        <Link to='/' className="font-bold text-2xl">Task<span className="text-[#2563DC]">MasterHub</span></Link>
+        <Link to='/' className="font-bold text-2xl flex gap-2 items-center "><span><GrHomeRounded className="hover:text-[#2563DC]"/></span> Task<span className="text-[#2563DC]">MasterHub</span></Link>
           <ul className="flex flex-col gap-4 mt-16">
             <li>
               <button className="w-full">
@@ -40,7 +40,10 @@ const Dashboard = () => {
                   src={user.photoURL}
                   alt=""
                 />
+                <h3>{user.displayName
+}</h3>
               </div>
+
             </div>
             {/* outlet */}
             <div className="p-10">

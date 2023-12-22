@@ -15,29 +15,25 @@ const OurUser = () => {
                                 <span className="grid h-20 w-20 place-items-center rounded-full bg-amber-600 transition-all duration-300 group-hover:bg-amber-900">
                                     <img
                                         className="rounded-full"
-                                        src="https://iili.io/JAfoLwg.jpg"
+                                        src="https://i.ibb.co/YRyKpBR/pexels-photo-2182970.jpg"
                                         alt=""
                                     />
+                                    
+
                                 </span>
                                 <div className=" pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
                                     <p>
-                                        <span className="text-xl font-semibold">Jhon Dae </span>
+                                        <span className="text-xl font-semibold">Mario Anderson</span>
                                     </p>
                                     <p>
                                         <span className="font-extralight">
-                                        Student
+                                        Full-stack Developer
                                         </span>
                                     </p>
                                     <p>
-                                        <span className="font-semibold">Benefits: </span>Access to
-                                        coding resources, programming tips, and a supportive
-                                        community.
+                                        Seamlessly organize tasks and projects with intuitive tools and customizable features tailored to your workflow. Enjoy priority support, advanced task tracking, and real-time collaboration with team members for efficient project management.
                                     </p>
-                                    <p>
-                                        <span className="font-semibold">Key Insights: </span>Explore
-                                        the latest discussions on AI development and its impact
-                                        across industries.
-                                    </p>
+                                    
                                 </div>
                                 <div className="pt-5 text-base font-semibold leading-7">
                                     <div className="rating">
@@ -87,23 +83,17 @@ const OurUser = () => {
                                 </span>
                                 <div className=" pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
                                     <p>
-                                        <span className="text-xl font-semibold">Jhon Dae </span>
+                                        <span className="text-xl font-semibold">Kay Ruffin</span>
                                     </p>
                                     <p>
                                         <span className="font-extralight">
-                                            Full-stack Developer
+                                        Student 
                                         </span>
                                     </p>
                                     <p>
-                                        <span className="font-semibold">Benefits: </span>Access to
-                                        coding resources, programming tips, and a supportive
-                                        community.
+                                        Streamline your productivity with a platform that offers task categorization, deadline reminders, and priority settings, enabling you to focus on what matters most. Access insightful analytics to optimize your workflow and achieve your goals effectively.
                                     </p>
-                                    <p>
-                                        <span className="font-semibold">Key Insights: </span>Explore
-                                        the latest discussions on AI development and its impact
-                                        across industries.
-                                    </p>
+                                   
                                 </div>
                                 <div className="pt-5 text-base font-semibold leading-7">
                                     <div className="rating">
@@ -147,13 +137,13 @@ const OurUser = () => {
                                 <span className="grid h-20 w-20 place-items-center rounded-full bg-amber-600 transition-all duration-300 group-hover:bg-amber-900">
                                     <img
                                         className="rounded-full"
-                                        src="https://iili.io/JAfoLwg.jpg"
+                                        src="https://i.ibb.co/dQhXjq3/pexels-italo-melo-2379004.jpg"
                                         alt=""
                                     />
                                 </span>
                                 <div className=" pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
                                     <p>
-                                        <span className="text-xl font-semibold">Jhon Dae </span>
+                                        <span className="text-xl font-semibold">Jamie Gallo </span>
                                     </p>
                                     <p>
                                         <span className="font-extralight">
@@ -161,15 +151,9 @@ const OurUser = () => {
                                         </span>
                                     </p>
                                     <p>
-                                        <span className="font-semibold">Benefits: </span>Access to
-                                        coding resources, programming tips, and a supportive
-                                        community.
+                                        Experience heightened efficiency through task delegation, automated reminders, and a user-friendly interface designed for effortless planning. Utilize integrated calendars, goal-setting features, and synchronization options across devices for a seamless organizational experience.
                                     </p>
-                                    <p>
-                                        <span className="font-semibold">Key Insights: </span>Explore
-                                        the latest discussions on AI development and its impact
-                                        across industries.
-                                    </p>
+                                    
                                 </div>
                                 <div className="pt-5 text-base font-semibold leading-7">
                                     <div className="rating">

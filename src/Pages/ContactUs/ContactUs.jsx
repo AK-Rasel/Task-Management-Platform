@@ -33,7 +33,7 @@ const ContactUs = () => {
                     {/* content */}
                     <div className=" flex-1 lg:text-left md:text-justify items-center">
                         <h1 className="text-5xl font-extrabold uppercase text-[#2563DC]">Contact <span className="text-black">Us</span></h1>
-                        <p className="py-6 font-medium text-xl">Please don't hesitate to contact me. I'm excited to explore fresh projects, innovative concepts, or ways to contribute to your vision.</p>
+                        <p className="py-6 font-medium text-xl">Contact us If you have any problem or want to give any feedback you can contact us.</p>
 
 
 

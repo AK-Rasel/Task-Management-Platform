@@ -38,7 +38,7 @@ const Tasks = () => {
   return (
     <div className="grid gap-2 grid-cols-3 py-8">
       <div>
-        <div className="p-4 bg-[#CAD9F6] border rounded">
+        <div className="p-4 bg-[#5890ff] border rounded">
           <div>
             <h2 className="text-sm font-semibold">To do</h2>
           </div>
@@ -64,7 +64,7 @@ const Tasks = () => {
         </div>
       </div>
       <div>
-        <div className="p-4 bg-[#FFE4C2] border rounded">
+        <div className="p-4 bg-[#ffbe6f] border rounded">
           <div>
             <h2 className="text-sm font-semibold">On Going</h2>
           </div>
@@ -90,7 +90,7 @@ const Tasks = () => {
         </div>
       </div>
       <div>
-        <div className="p-4 bg-[#FAD0C6] border rounded">
+        <div className="p-4 bg-[#3fe747] border rounded">
           <div>
             <h2 className="text-sm font-semibold">Completed</h2>
           </div>
